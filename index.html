@@ -47,41 +47,24 @@
       asignatura = "sytw";
       mostrar_practicas(asignatura);
     });
-    $("#adbd").click(function()
-    {
-      asignatura = "adbd";
-      mostrar_practicas(asignatura);
-    });
+    
     $("#lpp").click(function()
     {
       asignatura = "lpp";
       mostrar_practicas(asignatura);
     });
-    $("#ia").click(function()
-    {
-      asignatura = "ia";
-      mostrar_practicas(asignatura);
-    });
-    $("#gco").click(function()
-    {
-      asignatura = "gco";
-      mostrar_practicas(asignatura);
-    });
+   
     $("#tio").click(function()
     {
       asignatura = "tio";
       mostrar_practicas(asignatura);
     });
-    $("#aeda").click(function()
+    $("#aed").click(function()
     {
       asignatura = "aeda";
       mostrar_practicas(asignatura);
     });
-    $("#ssi").click(function()
-    {
-      asignatura = "ssi";
-      mostrar_practicas(asignatura);
-    });
+    
     $("#dsi").click(function()
     {
         asignatura = "dsi";
@@ -92,7 +75,6 @@
       $("#listado_practicas").html(" ");
       $("#practicas").fadeIn("slow");
       $.getJSON('js/json/'+archivo+'.js', function(datos){
-          //var output = "<div class="+"container"><div class=row><div class=col-lg-12 text-center><h2 class=section-heading><center>Prácticas realizadas</center></h2><hr class=primary></div></div></div>";
           if(datos != null)
           {
             $("#mensaje_asignaturas").css("display","none");
@@ -126,7 +108,7 @@
   {
   	color:#F05F40;
   }
-  #sytw,#tio,#adbd,#ia,#lpp,#gco,#dsi,#ssi,#aeda
+  #sytw,#tio,#lpp,#dsi,#aed
   {
   	cursor:pointer;
   }
@@ -187,7 +169,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Mis pŕácticas</h2>
+                    <h2>Mis Asignaturas</h2>
                     <hr class="star-primary">
                 </div>
             </div>
